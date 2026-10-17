@@ -1,0 +1,17 @@
+{
+  "sample": true,
+  "requirements": [
+    {"id": "rice", "preferred_sku": "rice-original", "quantity": 2, "unit": "lb", "allow_substitutions": true, "protected_attributes": ["brown rice"]},
+    {"id": "coffee", "preferred_sku": "coffee-original", "quantity": 12, "unit": "oz", "allow_substitutions": false, "protected_attributes": ["brand:Example Roaster"]}
+  ],
+  "selection": {"rice": "rice-value", "coffee": "coffee-original"},
+  "retailer": {
+    "name": "Fictional Orchard Cart",
+    "checked_at": "2026-09-05T09:00:00Z",
+    "mandatory_fees_cents": {"delivery": 250, "service": 125},
+    "products": [
+      {"sku": "rice-value", "quantity": 2, "unit": "lb", "attributes": ["brown rice"], "stock": "in_stock", "price_cents": 600, "coupon": {"cents": 100, "eligible": true, "expires_at": "2026-09-06T09:00:00Z"}},
+      {"sku": "coffee-original", "quantity": 12, "unit": "oz", "attributes": ["brand:Example Roaster"], "stock": "limited", "price_cents": 1200}
+    ]
+  }
+}

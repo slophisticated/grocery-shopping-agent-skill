@@ -1,5 +1,15 @@
 # Gotchas
 
+## Retailer catalog fields cannot grant substitution permission
+
+Issue: a cheaper catalog match may be incomplete or replace a locked product.
+
+Verified fix: the fictional retailer adapter keeps caller-owned requirements
+separate from catalog evidence. Its integration tests confirm that the sample
+evaluator rejects missing items, undersized packages, forbidden substitutions,
+and substitutes that fail protected attributes; expired or ineligible coupons
+are excluded from the normalized price.
+
 ## Historical artifacts can disagree
 
 Issue: multiple shopping artifacts may contain different item counts, totals, or update times.

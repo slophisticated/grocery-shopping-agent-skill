@@ -93,6 +93,10 @@ python3 scripts/evaluate_sample.py --check
 
 See [docs/evaluation.md](docs/evaluation.md) for the fixture, method, and interpretation.
 
+For a runnable fictional catalog-to-basket mapping, see the
+[retailer adapter example](docs/retailer-adapters.md), including coverage,
+coupon expiry, mandatory fees, and protected-product checks.
+
 ## Private location input
 
 The public example reads the delivery address from an environment variable instead of storing it in JSON.
